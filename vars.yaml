@@ -11,7 +11,7 @@
       course: "GCP"
     ansible.builtin.debug:
       msg: "course is {{ course }} with aws, duration is {{ Duration }}, trainer is {{ Trainer }}"
-
+  
   - name: print the variable                                           
     ansible.builtin.debug:
       msg: "course is {{ course }} with aws, duration is {{ Duration }}, trainer is {{ Trainer }}"    
