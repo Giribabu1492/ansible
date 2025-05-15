@@ -1,0 +1,10 @@
+- name: prompt vars
+  hosts: local
+  connection: local
+  tasks: 
+  - name: prompt names to print
+    ansible.builtin.debug:
+      msg: "course is {{ course }} with aws, duration is {{ Duration }}, trainer is {{ Trainer }}"
+
+
+
