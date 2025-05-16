@@ -1,6 +1,5 @@
 - name: variable from files
-  hosts: local
-  connection: local
+  hosts: web
   vars_files: 
   - varfile.yaml
   tasks:
