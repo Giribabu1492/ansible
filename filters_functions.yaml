@@ -11,3 +11,13 @@
       fruits: "apple, banana,ornage"
     ansible.builtin.debug:
       msg: "fruits are: {{ fruits | split (',')}}"    
+
+
+  - name: conver list 
+    vars:
+      course:
+        name: ansible
+        duration: 10hrs
+        trainer: shivakaumar
+    ansible.builtin.debug:
+       msg: "couser info: {{ course | dict2items }}"         
