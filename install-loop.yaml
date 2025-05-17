@@ -1,0 +1,15 @@
+- name: install softwares
+  hosts: web
+  become: yes
+  tasks:
+  - name: installing packages from loops are
+    ansible.builtin.debug:
+     msg: "Hello you have successfully installed {{ item }}"
+     state: installed
+    loop:
+    - gcc
+    - mysql
+    - git
+    - zip
+
+
