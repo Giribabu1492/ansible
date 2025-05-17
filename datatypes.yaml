@@ -1,0 +1,21 @@
+- name: Devops course info
+  hosts: local
+  connection: local
+  vars: 
+    course: "Devops With AWS & GCP"
+    Duration: 120
+    Trainer: shivakumar
+    topics:
+    - linux
+    - shell
+    - ansible
+    - terraform
+    live: true
+    tools:
+      ci: jenkins
+      cloud: aws
+      container: docker
+  tasks:
+    - name: print course info
+      ansible.builtin.debug:
+        msg: "Hello I am learning {{ course }}, duration {{ Duration }} topics are: {{ topics }}, is it live {{ live }}, tools covered {{ tools }}"   
