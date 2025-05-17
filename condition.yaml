@@ -7,6 +7,5 @@
   - name: print the number ris greather than 10
     ansible.builtin.debug:
         msg: "print the given number {{ number }}"
-    when: number > 10
-    
-        
+    when: number > 25
+
