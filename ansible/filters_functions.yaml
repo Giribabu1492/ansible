@@ -26,7 +26,7 @@
   - name: conver map into list 
     vars:
       numbers: [1,40,57,78,989876] 
-    ansible.builtin.debug:
+    ansible.builtin.debug:      
       msg: "min is: {{ numbers | min}}, Max is  {{ numbers | max }}"
 
 
